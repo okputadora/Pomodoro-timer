@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/xml; charset=utf-8" />
+  <!--ensures proper rendering and touch zooming on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro Clock</title>
+  <!--import google font-->
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <!--import style sheet-->
+  <link rel="stylesheet" type = "text/css"
+  href=pomstyle.css>
+  <!--link javascript-->
+</head>
+
+<body>
+  <h1>Pomodoro Timer</h1>
+  <div id="timesetters">
+    <div class="set"id="break">
+      <div class="clock-title">Break Length</div>
+      <div class="buttons">
+        <div class="button" id="breakMinues">-</div>
+        <div class="button" id="breakTime">5</div>
+        <div class="button" id="breakplus">+</div>
+      </div>
+
+    </div>
+    <div class="set"id="work">
+      <div class="clock-title">Work Length</div>
+      <div class="buttons">
+        <div class="button" id="workMinus">-</div>
+        <div class="button" id="workTime">5</div>
+        <div class="button" id="workPlus">+</div>
+      </div>
+    </div>
+  </div>
+  <div id=clock>
+    <div id="start">Start</div>
+    <div id="sess-type">Work</div>
+    <div id="timer">25:00</div>
+  </div>
+</body>
