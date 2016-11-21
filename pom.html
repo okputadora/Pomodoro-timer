@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pomodoro Clock</title>
   <!--import google font-->
-<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <!--import style sheet-->
   <link rel="stylesheet" type = "text/css"
   href=pomstyle.css>
@@ -15,31 +15,36 @@
 </head>
 
 <body>
-  <h1>Pomodoro Timer</h1>
-  <div id="timesetters">
-    <div class="set"id="break">
-      <div class="clock-title">Break Length</div>
-      <div class="buttons">
-        <div class="button" id="breakMinus">-</div>
-        <div class="button" id="breakTime">5</div>
-        <div class="button" id="breakPlus">+</div>
-      </div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3">
+    <h1>Pomodoro Timer</h1>
+    <div id="timesetters">
+      <div class="set"id="break">
+        <div class="clock-title">Break Length</div>
+        <div class="buttons">
+          <div class="button" id="breakMinus">-</div>
+          <div class="button" id="breakTime">5</div>
+          <div class="button" id="breakPlus">+</div>
+        </div>
 
-    </div>
-    <div class="set"id="work">
-      <div class="clock-title">Work Length</div>
-      <div class="buttons">
-        <div class="button" id="workMinus">-</div>
-        <div class="button" id="workTime">25</div>
-        <div class="button" id="workPlus">+</div>
+      </div>
+      <div class="set"id="work">
+        <div class="clock-title">Work Length</div>
+        <div class="buttons">
+          <div class="button" id="workMinus">-</div>
+          <div class="button" id="workTime">25</div>
+          <div class="button" id="workPlus">+</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div id=clock>
     <div id="start">Start</div>
-    <div id="sess-type">Work</div>
-    <div id="timer">25:00</div>
+    <div id=clock>
+      <div id="sess-type">Work</div>
+      <div id="timer">25:00</div>
+    </div>
   </div>
+  <div class="col-md-3"></div>
+
 </body>
 
 <script src="https://use.fontawesome.com/041a8a6fad.js"></script>
