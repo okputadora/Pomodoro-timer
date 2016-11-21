@@ -5,14 +5,38 @@
 
 body{
   background-color: snow;
+  display: flex;
 }
 
 .col-md-3{
-  width: 33.3%;
+  min-width: 33.3%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#statsbox{
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 0 3px 0px black;
+  height: 350px;
+  width: 200px;
+}
+#graphs{
+  display:flex;
+  padding: 20px;
+}
+#graphs > div{
+  width: 20px;
+  height: 100%;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#work-remaining{
+  background-color: seagreen;
+  transition: height 0.1s
 }
 #timesetters{
   display: flex;
@@ -55,6 +79,7 @@ body{
   font-size: 50px;
   border: none;
   min-width: 100px;
+  background-color: snow;
 }
 
 #start{

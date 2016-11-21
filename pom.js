@@ -1,10 +1,15 @@
 var breakTime = 5;
 var workTime = 25;
 var clockOn = true;
-var second = 59;
+var second = 60;
+var totalSeconds;
+var secToPer;
+var per = 100;
 
 function displaySecond(){
-  console.log("in here");
+  second -= 1;
+  per -= secToPer;
+  $("#work-remaining").css("height", per + "%");
   if (second > 9){
     $("#timer").html(workTime + ":" + second);
   }
@@ -42,9 +47,10 @@ $("#workMinus").click(function(){
 
 // Start clock
 $("#start").click(function(){
-  $("#timer").html()
-  console.log("button working");
-      setInterval(displaySecond, 1000);
-      workTime -= 1;
-
+  $("#timer").html(workTime + ":00");
+  totalSeconds = workTime * 60;
+  secToPer = 100/totalSeconds;
+  console.log(secToPer);
+  console.log(totalSeconds)
+  setInterval(displaySecond, 1000);
 });
