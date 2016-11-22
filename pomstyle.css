@@ -26,17 +26,23 @@ body{
 #graphs{
   display:flex;
   padding: 20px;
+  align-items: flex-end;
 }
 #graphs > div{
   width: 20px;
   height: 100%;
-  border: 1px solid black;
+  border-radius: 8px;
   margin: 5px;
+  opacity: .7;
 }
 
 #work-remaining{
   background-color: seagreen;
   transition: height 0.1s
+}
+
+#break-remaining{
+  background-color: #FF0D00;
 }
 #timesetters{
   display: flex;
@@ -86,6 +92,10 @@ body{
   margin-top: 20px;
   font-size: 30px;
 }
+
+#sess-type{
+  transition: 2s;
+}
 #clock{
   margin: 20px;
   font-size: 50px;
@@ -94,6 +104,7 @@ body{
   padding:50px;
   border-radius: 50%;
   border: 10px solid dodgerblue;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
