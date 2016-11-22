@@ -8,6 +8,10 @@ body{
   display: flex;
 }
 
+h1{
+  border-bottom: 1px solid black;
+}
+
 .col-md-3{
   min-width: 33.3%;
   display: flex;
@@ -22,6 +26,7 @@ body{
   box-shadow: 0 0 3px 0px black;
   height: 350px;
   width: 320px;
+  box-shadow: 0 0 20px 3px;
 }
 
 #stats{
