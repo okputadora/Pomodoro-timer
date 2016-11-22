@@ -75,14 +75,27 @@ $("#workPlus").click(function(){
 });
 
 $("#breakMinus").click(function(){
-  ogBreakTime -= 1;
-  $("#breakTime").html(ogBreakTime);
+  // don't let the user go below 0
+  if(ogBreakTime === 1){
+    ogBreakTime = 1;
+  }
+  else{
+    ogBreakTime -= 1;
+    $("#breakTime").html(ogBreakTime);
+  }
 });
 
 $("#workMinus").click(function(){
-  ogWorkTime -= 1;
+  // don't let the user go below 0
+  if(ogWorkTime === 1){
+    ogWorkTime = 1;
+  }
+  else {ogWorkTime -= 1;
   $("#workTime").html(ogWorkTime);
+  }
 });
+
+
 
 // Start clock
 $("#start").click(function(){
