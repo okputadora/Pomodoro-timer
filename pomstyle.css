@@ -36,13 +36,14 @@ body{
   opacity: .7;
 }
 
-#work-remaining{
+#Work-remaining{
   background-color: seagreen;
-  transition: height 0.1s
+  transition: height 0.3s;
 }
 
-#break-remaining{
+#Break-remaining{
   background-color: #FF0D00;
+  transition: height 0.3s;
 }
 #timesetters{
   display: flex;
