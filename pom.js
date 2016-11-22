@@ -7,8 +7,8 @@ var breakSecToPer;
 var percent = 100;
 var id;
 var numBreak = 0;
-var totalTime = 0;
-var workTime = 0;
+var numWork = 0;
+var timerInitiated = false;
 // declare variable to stop setInterval here so all
 // functions have acces to it
 var stop;
@@ -84,6 +84,18 @@ $("#workMinus").click(function(){
 
 // Start clock
 $("#start").click(function(){
+  // reset if timer is already running
+  if (timerInitiated === true){
+    console.log("in here");
+    clearInterval(stop);
+    second = 59;
+    numWork = 0;
+    numBreak = 0;
+    percent = 100;
+    $("#Work-remaining").css("height", "100%");
+    $("#Break-remaining").css("height", "100%");
+  }
+  timerInitiated = true;
   breakTime = ogBreakTime;
   workTime = ogWorkTime;
   $("#timer").html(workTime + ":00");
