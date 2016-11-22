@@ -6,6 +6,9 @@ var workSecToPer;
 var breakSecToPer;
 var percent = 100;
 var id;
+var numBreak = 0;
+var totalTime = 0;
+var workTime = 0;
 // declare variable to stop setInterval here so all
 // functions have acces to it
 var stop;
@@ -27,6 +30,8 @@ function countdown(percentage, id){
   second -= 1;
   $("#" + id + "-remaining").css("height", percent + "%");
   if (time === 0 && second === -1){
+    numWork += 1;
+    $("#workValue").html(numWork);
     console.log("calling new function");
     percent = 100;
     clearInterval(stop);
@@ -42,6 +47,9 @@ function countdown(percentage, id){
       }, 1000);
     }
     else if (id === "Break"){
+      // increment number of breaks
+      numBreak += 1;
+      $("#breakValue").html(numBreak);
       console.log("id = break");
       time = ogWorkTime-1;
       id = "Work";
