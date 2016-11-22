@@ -131,16 +131,12 @@ h1{
   height: 300px;
   padding:50px;
   border-radius: 50%;
-  border: 10px solid dodgerblue;
+  border: 10px solid seagreen;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 30px 0px black;
-}
-
-
-#sess-type{
-
+  transition: border 2s;
 }

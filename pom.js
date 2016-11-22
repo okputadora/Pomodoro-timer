@@ -42,6 +42,7 @@ function countdown(percentage, id){
       console.log("id = work");
       time = ogBreakTime-1;
       id = "Break";
+      $("#clock").css("border", "10px solid #FF0D00")
       stop = setInterval(function(){
         countdown(breakSecToPer, id);
       }, 1000);
@@ -53,6 +54,7 @@ function countdown(percentage, id){
       console.log("id = break");
       time = ogWorkTime-1;
       id = "Work";
+      $("#clock").css("border", "10px solid seagreen")
       stop = setInterval(function(){
         countdown(workSecToPer, id);
       }, 1000);
@@ -94,6 +96,7 @@ $("#start").click(function(){
     percent = 100;
     $("#Work-remaining").css("height", "100%");
     $("#Break-remaining").css("height", "100%");
+    $("#clock").css("border", "10px solid seagreen")
   }
   timerInitiated = true;
   breakTime = ogBreakTime;
