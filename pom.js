@@ -39,8 +39,8 @@ function countdown(percentage, id){
     $("#sess-type").html("Break");
     // reset graph
     $("#work-remaining").css("height", "100%");
-    setInterval(function(){
-      stop = countdown(breakSecToPer, id);
+    stop = setInterval(function(){
+      countdown(breakSecToPer, id);
     }, 1000);
   }
   if (time === 0 && second === 0 && id === "break"){
@@ -54,8 +54,8 @@ function countdown(percentage, id){
     $("#sess-type").html("Work");
     // reset graph
     $("#break-remaining").css("height", "100%");
-    setInterval(function(){
-      stop = countdown(workSecToPer, id);
+    stop = setInterval(function(){
+      countdown(workSecToPer, id);
     }, 1000);
   }
 }
